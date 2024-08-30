@@ -1,0 +1,6 @@
+/* styles.css */
+.border-gradient {
+    border: 10px solid transparent;
+    border-image: linear-gradient(to right, rgb(106, 106, 239), rgb(79, 115, 205), rgb(64, 64, 181)) 1;
+  }
+  

@@ -1,0 +1,26 @@
+/* NavBar.css */
+
+.navbar-list li button {
+    @apply transition-transform transition-colors duration-300 ease-in-out;
+  }
+  
+  .navbar-list li button:hover {
+    @apply text-blue-500 bg-blue-200 transform scale-105 p-2 rounded-xl;
+  }
+  
+  /* Ajouter un effet de sous-lignage */
+  .navbar-list li button::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: rgb(48, 48, 124);
+    transition: background-color 0.3s, transform 0.3s;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+  }
+  
+  .navbar-list li button:hover::after {
+    background-color: blue;
+    transform: scaleX(1);
+  }
+  
